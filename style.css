@@ -1,0 +1,66 @@
+body {
+    height: 500px;
+    position: relative;
+}
+
+.car {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+
+    animation: animateCar infinite 10s;
+}
+
+.wheel {
+    border-radius: 50%;
+    background-color: aqua;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+}
+
+.wheels {
+    display: flex;
+    align-items: flex-start;
+    width: 200px;
+    position: absolute;
+    top: 120px;
+
+    justify-content: space-between;
+}
+
+.roof {
+    background-color: pink;
+    width: 100px;
+    height: 65px;
+    border-radius: 15px;
+}
+
+.hull {
+    background-color: pink;
+    width: 200px;
+    height: 80px;
+    border-radius: 15px;
+}
+
+.muzzle {
+    background-color: pink;
+    width: 100px;
+    height: 10px;
+    border-radius: 15px;
+}
+
+.tank{
+    display: flex;
+    align-items: center;
+}
+
+@keyframes animateCar {
+	0% {
+		left: 0;
+	}
+	100% {
+		left: calc(100vw - 250px);
+	}
+}
